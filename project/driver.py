@@ -8,8 +8,6 @@ from project.student import Student
 class NureDriver(webdriver.Chrome):
     """
     Оболочка для хром вебдрайвера для удобного доступа к сайту
-
-
     """
 
     DLNURE_LOGIN_URL = "https://dl.nure.ua/login/index.php"

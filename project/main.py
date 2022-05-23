@@ -49,8 +49,9 @@ class Main:
             time_left = self.get_time_left_for_pair(pair_start)
             self.wait(time_left)
 
-            # этот блок позвояет в случае, если уже прошло несколько пар, до запуска бота, выполнить подтверждение
-            # только 1 раз ( остальные разы он просто пропускает, до того момента когда time_left не будет больше 0
+            # TODO что это вообще такое и как оно работает (но оно ведь работает)
+            # этот блок позволяет в случае, если уже прошло несколько пар, до запуска бота, выполнить подтверждение
+            # только 1 раз (остальные разы он просто пропускает, до того момента когда time_left не будет больше 0
             if time_left == 0 and skip:
                 continue
             elif time_left > 0 and skip:
@@ -105,8 +106,8 @@ class Main:
 if __name__ == '__main__':
     try:
         Main()
-    except:
-        logging.error(traceback.format_exc())
+    except Exception as e:
+        logging.error(e)
     finally:
         input("press enter to finish the program")
 

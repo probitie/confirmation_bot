@@ -1,6 +1,5 @@
 from project import *
 from project.driver import NureDriver
-from project.student import Student
 
 
 class PresenceConfirmation:
@@ -9,8 +8,6 @@ class PresenceConfirmation:
 
     """
 
-    # итинф 21-3
-    SCHEDULE_URL = "https://cist.nure.ua/ias/app/tt/f?p=778:201:3095227613128610:::201:P201_FIRST_DATE,P201_LAST_DATE,P201_GROUP,P201_POTOK:01.02.2022,30.07.2022,9287988,0:"
     COURSES_URL = "https://dl.nure.ua/my/"
 
     def __init__(self, nure_driver: NureDriver):
