@@ -1,0 +1,8 @@
+project/pc_old.txt
+.idea/
+venv/
+build/
+__pycache__/
+*.spec
+todo.txt
+project/config.json
